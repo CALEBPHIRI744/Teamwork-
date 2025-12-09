@@ -14,8 +14,9 @@
     </h1>
 
     <div
-      class="flex flex-wrap gap-4 bg-sky-600 mx-auto border border-white w-[800px] h-[250px]"
+      class="flex flex-wrap gap-4 bg-sky-600 mx-auto border border-white max-w-[800px]"
     >
+      <!-- using foreach loop and the condition to filter where position is equal to true -->
       <% worker.forEach(employee => {%> <% if(employee.hasPosition===true){ %>
 
       <div

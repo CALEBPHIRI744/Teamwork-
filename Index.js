@@ -26,7 +26,7 @@ const employee = [
     fname: "Charles",
     lname: "Louis",
     location: "Mzuzu",
-    hasPosition: false,
+    hasPosition: true,
   },
 ];
 app.get("/", (req, res) => {
