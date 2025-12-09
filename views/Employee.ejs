@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-600">
+    <h1
+      class="text-4xl md:text-5xl font-bold font-sans text-center text-white my-8"
+    >
+      EMPLOYEE TABLE
+    </h1>
+
+    <div
+      class="flex flex-wrap gap-4 bg-sky-600 mx-auto border border-white w-[800px] h-[250px]"
+    >
+      <% worker.forEach(employee => {%> <% if(employee.hasPosition===true){ %>
+
+      <div
+        class="h-[200px] w-[200px] text-white bg-green-600 text-center m-4 rounded-lg flex flex-col items-center justify-center mx-auto"
+      >
+        <p class="text-white-600 border border-white h-30 w-20 p-2">
+          <%=employee.fname %>
+        </p>
+        <p><%= employee.lname %></p>
+        <% } %>
+      </div>
+
+      <% }) %>
+      <h1>Hello everyone</h1>
+    </div>
+  </body>
+</html>
